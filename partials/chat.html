@@ -1,0 +1,25 @@
+
+<!-- CHAT MARKUP -->
+<div id="firechat-wrapper">
+    <center><header>Studie Chat</header>
+    <br> Choose a group to chat with! <br>
+    <a class='btn orange darken-4' ng-repeat="userGroup in userGroups" ng-click="chatThisGroup(userGroup)">{{ userGroup.course + ": " + userGroup.title }}</a>
+    <br> {{chatroomName}}  <br>
+    </center>
+    
+    <div id="messageOut" scroll-glue-bottom="glued">
+        <ul ng-controller="chatCtrl">   
+            <li ng-repeat="chatMessage in chatMessages">
+                <b>{{ chatMessage.user }} :</b> {{ chatMessage.message }} 
+                <br><small><font color="#e65100"><mydate>{{chatMessage.date | date:'medium'}}</mydate></font></small>
+            </li>    
+        </ul>
+        <a id="bottom"></a>
+    </div>
+    
+    <footer>
+        <input type='text' ng-repeat="userGroup in userGroups" ng-show="chosenGroup == userGroup.id" id='messageInput_{{ userGroup.id }}'  placeholder='Type a message to group {{ userGroup.title }}'>
+    </footer>
+    
+
+</div>

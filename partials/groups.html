@@ -1,0 +1,41 @@
+<!--<section class="head-content "> 
+    <div class="row">
+        <div class="col m4">
+            <img ng-src={{profileImg}} style="display:inline-block;"class="responsive-img circle profile-img">
+            <div class="name-badge">
+                <h5 class="grey-text text-lighten-4">{{fullName}}</h5>
+                <h5 class="grey-text text-lighten-4">{{schoolName}}</h5>
+            </div>
+        </div>
+        <div class="col m3 push-m5">
+            <button class="btn green" ng-click="logout()">Logout</button>   
+        </div>
+    </div>
+    <nav class="head-nav"> 
+        <a href="#/user" style="text-decoration: underline;">Dashboard</a> 
+        <a href="#/profile">Profile</a>
+    </nav>
+</section>-->  
+
+<h4 class="center">Groups for you</h2>
+
+<div class="container" ng-controller="groupCtrl">
+    <div class="row" style="">
+        <div class="col l4 m6 s12 group" ng-repeat="group in groups">
+            <div class="card grey lighten-4">
+                <div class="card-content ">
+                    <span class="card-title truncate" style="font-weight: 400;">{{group.title}} | {{group.course}}</span>
+                    <p class="truncate">{{group.description}}</p>
+                    <p class="truncate">Location: {{group.location}}</p>
+                </div>
+                <div class="card-action">
+                    <a href="" ng-click="addGroup(group)" class="blue-text">Join Group</a>
+                    <a href="" class="green-text">View Activity</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+

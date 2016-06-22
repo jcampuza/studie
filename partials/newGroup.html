@@ -1,0 +1,25 @@
+<h4 class="center">Create a Group</h4>
+<div class="container">
+<div class="row">
+	<div class="col s12">
+    	<select ng-model="groupClass" ng-options="course.$id for course in test" ng-change="change(groupClass)">
+    	</select>
+    	<label>Course {{groupClass}}</label>
+  	</div>
+
+	<p>{{groupClass}}</p>
+
+	<div class="input-field col s12">
+		<input placeholder="Title" type="text" required class="validate" ng-model="group.title">
+		<label for="first_name">Group Title</label>
+    </div>
+
+    <div class="row">
+		<div class="input-field col s12">
+			<textarea class="materialize-textarea" ng-model="group.description"></textarea>
+			<label for="textarea1">Group Description</label>
+        </div>
+	</div>
+</div>
+</div>
+

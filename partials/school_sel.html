@@ -1,0 +1,35 @@
+<!--<section class="head-content "> 
+    <div class="row">
+        <div class="col m4">
+            <img ng-src={{profileImg}} style="display:inline-block;"class="responsive-img circle profile-img">
+            <div class="name-badge">
+                <h5 class="grey-text text-lighten-4">{{fullName}}</h5>
+                <h5 class="grey-text text-lighten-4">{{schoolName}}</h5>
+            </div>
+        </div>
+        <div class="col m3 push-m5">
+            <button class="btn green" ng-click="logout()">Logout</button>   
+        </div>
+    </div>
+    <nav class="head-nav"> 
+        <a href="#/user" style="text-decoration: underline;">Dashboard</a> 
+        <a href="#/profile">Profile</a>
+    </nav>
+</section>-->  
+    
+    <div class="wrapper center-align">
+		<h4>Select Your School</h4>
+        <a class="waves-effect waves-light btn orange darken-4" style="width:50%" ng-click="setSchoolUCSC()" onclick="Materialize.showStaggeredList('#next-button')">UC Santa Cruz</a><br><br>
+        
+        <a class="waves-effect waves-light btn orange darken-4" style="width:50%" onclick="Materialize.toast('Coming Soon!', 2000)">Cabrillo College</a><br><br>
+        
+        <a class="waves-effect waves-light btn orange darken-4" style="width:50%"onclick="Materialize.toast('Coming Soon!', 2000)">San Jose State</a><br><br>
+	</div>
+
+
+    <ul id="next-button" class="center-align">
+            <li class="btn green" style="transform: translateX(0px); opacity: 0;">
+                <a href="#/classes" style="color: white">Next</a>
+            </li>
+    </ul> 
+	

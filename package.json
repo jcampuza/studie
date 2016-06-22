@@ -1,0 +1,33 @@
+{
+  "name": "studie",
+  "version": "1.0.0",
+  "description": "A cross platform group study app",
+  "main": "index.html",
+  "directories": {
+    "doc": "docs"
+  },
+  "dependencies": {
+    "angular": "^1.5.3",
+    "angular-resource": "^1.5.3",
+    "angular-route": "^1.5.3",
+    "angularfire": "^1.2.0",
+    "firechat": "^2.0.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/josecalles/Studie.git"
+  },
+  "keywords": [
+    "studie"
+  ],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/josecalles/Studie/issues"
+  },
+  "homepage": "https://github.com/josecalles/Studie#readme"
+}

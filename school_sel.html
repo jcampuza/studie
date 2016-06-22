@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="studie">
+<head>
+	<meta charset="utf-8">
+	<meta content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Group study app">
+	<meta name="author" content="Studie">
+
+	<title>Select Your School</title>
+
+	<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Roboto:500,300">
+	<link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>	
+	<link href="css/style.css" rel="stylesheet">
+    <link href="css/style2.css" rel="stylesheet">
+</head>
+
+<body class="grey lighten-3">
+
+	<nav class="orange darken-4" role ="navigation">
+		<h3 class="grey-text text-lighten-4">Studie</h3>
+	</nav>
+
+	<div ng-view></div>
+    
+    <div class="wrapper">
+		<h4>Select Your School</h4>
+        <a href="#" class="button">UC Santa Cruz</a><br>
+        <a href="#" class="button">Cabrillo College</a><br>
+        <a href="#" class="button">San Jose State</a>
+	</div>
+
+	<script type="text/javascript" src="node_modules/angular/angular.js"></script>
+	<script type="text/javascript" src="node_modules/angular-route/angular-route.js"></script>
+	<script type="text/javascript" src="js/app.js"></script>
+	<script type="text/javascript" src="js/routes.js"></script>
+	<script type="text/javascript" src="js/mainCtrl.js"></script>
+	<script type="text/javascript" src="js/userCtrl.js"></script>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+	<script type="text/javascript" src="js/materialize.min.js"></script>
+</body>
